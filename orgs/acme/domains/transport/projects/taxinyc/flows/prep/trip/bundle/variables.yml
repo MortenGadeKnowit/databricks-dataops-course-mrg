@@ -1,0 +1,23 @@
+variables:
+
+  root_path:
+    description: Workspace root_path
+    default: ${workspace.root_path}
+  git_branch:
+    description: Current git branch
+    default: ${bundle.git.branch}
+  git_commit:
+    description: Current git commit
+    default: ${bundle.git.commit}
+  source_path:
+    description: Bundle source path
+    default: ""
+  target:
+    description: Bundle target
+    default: ${bundle.target}
+  schema:
+    description: Bundle schema
+    default: ""
+  clean_git_branch:
+    description: Cleaned branch without special chars
+    default: ""
