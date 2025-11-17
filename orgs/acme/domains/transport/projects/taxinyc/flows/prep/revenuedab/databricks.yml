@@ -4,22 +4,22 @@ bundle:
 include:
   - bundle/variables.yml
   - bundle/targets.yml
-  - resources/*.yml
+  - bundle/python_deploy_base.yml
 
-artifacts:
-  platform:
-    type: whl
-    path: .
-    build: uv build
-    dynamic_version: true
+# artifacts:
+#   platform:
+#     type: whl
+#     path: .
+#     build: uv build
+#     dynamic_version: true
 
-experimental:
-  python:
-    # Activate virtual environment before loading resources defined in Python.
-    # If disabled, defaults to using the Python interpreter available in the current shell.
-    venv_path: .venv
-    mutators:
-      - 'mutators:job_brickops'
-      - 'mutators:pipeline_brickops'
-    resources:
-      - "resources:load_resources"
+# experimental:
+#   python:
+#     # Activate virtual environment before loading resources defined in Python.
+#     # If disabled, defaults to using the Python interpreter available in the current shell.
+#     venv_path: .venv
+#     mutators:
+#       - 'mutators:job_brickops'
+#       - 'mutators:pipeline_brickops'
+#     resources:
+#       - "resources:load_resources"
