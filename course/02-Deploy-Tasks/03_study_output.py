@@ -16,4 +16,15 @@
 
 # MAGIC %md
 # MAGIC
-# MAGIC Answer here...
+# MAGIC
+# MAGIC ## Temp table 'borough_population': 
+# MAGIC acme_transport_taxinyc.test_mortengade_main_514d1f89_revenue.borough_population
+# MAGIC
+# MAGIC ## Output table 'revenue_by_borough': 
+# MAGIC acme_transport_taxinyc.test_mortengade_main_514d1f89_revenue.revenue_by_borough
+# MAGIC
+# MAGIC ## Output table 'revenue_by_tripmonth': 
+# MAGIC acme_transport_taxinyc.test_mortengade_main_514d1f89_revenue.revenue_by_tripmonth
+# MAGIC
+# MAGIC ## Output table 'revenue_per_inhabitant': 
+# MAGIC acme_transport_taxinyc.test_mortengade_main_514d1f89_revenue.revenue_per_inhabitant

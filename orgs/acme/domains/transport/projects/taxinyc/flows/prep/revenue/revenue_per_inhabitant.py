@@ -70,16 +70,22 @@ borough_population_df.display()
 
 # COMMAND ----------
 
+
+
+# COMMAND ----------
+
 revenue_per_inhabitant_df = (
     revenue_by_borough_df
     .where(F.col("pickup_borough").isNotNull() & (F.col("pickup_borough") != "Unknown"))
     .join(borough_population_df, revenue_by_borough_df.pickup_borough == borough_population_df.borough, "inner")
-    .withColumn("amount", F.round("amount", 2))
+    .withColumn("full_amount", F.round("amount", 2))
     .withColumn("revenue_per_inhabitant", F.round(
         revenue_by_borough_df.amount / borough_population_df.population, 2)
     )
     .sort("revenue_per_inhabitant", ascending=False)
+    .drop("amount")
 )
+
 revenue_per_inhabitant_df.display()
 
 # COMMAND ----------

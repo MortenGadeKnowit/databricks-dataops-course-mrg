@@ -47,17 +47,15 @@
 
 # MAGIC %md
 # MAGIC
-# MAGIC Answer here...
+# MAGIC The job is the plan. The job run is the execution of the plan.
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## Task: How was the job name composed?
 # MAGIC
-# MAGIC Write answer in the empty cell below.
-
-# COMMAND ----------
-
-# MAGIC %md
+# MAGIC Name: transport_taxinyc_test_revenue_mortengade_main_514d1f89
 # MAGIC
-# MAGIC Answer here...
+# MAGIC It seems like everything is being handled by your custom functions. They can read my username and the commit id. The environment is specified in the function: autojob(env="test"). 
+# MAGIC
+# MAGIC The path to the job (something like 'databricks-dataops-course-mrg/orgs/acme/domains/transport/projects/taxinyc/flows/prep/revenue') is used to infer the domain (transport), the project (taxinyc) and the subject (revenue)
