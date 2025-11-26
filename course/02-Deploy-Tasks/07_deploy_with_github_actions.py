@@ -35,6 +35,10 @@
 
 # COMMAND ----------
 
+# MAGIC %pwd
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC
 # MAGIC ## Task: Clone the repo again in the **Repo** folder
@@ -61,7 +65,7 @@
 # MAGIC
 # MAGIC ## Task: Go to where you forked the repo on github.com.
 # MAGIC Go to the actions tab, and run the workflow. See if the deploy succeeds.
-
-
-
-
+# MAGIC
+# MAGIC
+# MAGIC
+# MAGIC
